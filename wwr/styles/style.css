@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+:root{
+--heading-font: "Poppins", sans-serif;
+--paragraph-font: "Space Grotesk", sans-serif;
+}
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +12,7 @@ nav a {
     text-align:center;
     color: black;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover{
@@ -37,16 +43,25 @@ nav a:hover{
 
 body{
     background-color: #7abfd1;
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0; 
 }
 
 header{
     background-color: #dfe2e0;
+    font-family: var(--heading-font)
 }
 
 .join, .book{
     background-color: #7abfd1 ;
     color: black;
     text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
@@ -56,6 +71,8 @@ header{
 
 .msg{
     background-color: #144336;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer{
@@ -66,6 +83,9 @@ footer{
 
 .home-title{
     color: black;
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4{
@@ -74,10 +94,19 @@ h4{
 
 .msg h2{
     color:#7abfd1 ;
+    margin: 0;
 }
 
 .msg p{
     color: #7abfd1;
+    font-family: var(--paragraph-font);
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+footer{
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a{
@@ -95,10 +124,41 @@ footer p a:hover{
     text-decoration: underline;
 }
 
+footer .socialimg{
+    padding-top: 15px;
+}
+
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 
 .logo{
     width: 80px;
+}
+
+#logo_link{
+    padding-top: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: var(--heading-font)
+}
+
+.rivers-card, .camping-card, .rapids-card{
+margin: 200px 0;
+
+}
+
+.card-img{
+border: 20px solid #144336;
+}
+
+main section img {
+box-sizing: border-box;
+}
+
+.mountains{
+    padding-bottom: 100px;
+    padding-top: 50px;
 }
