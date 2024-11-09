@@ -26,6 +26,11 @@ Fonts are separated by a | */
   --nav-hover-background-color: #F1FAEE;
 }
 
+img {
+  width: 100%;  /* Makes the images responsive */
+  max-width: 300px;  /* Sets a maximum width */
+  height: auto;  /* Maintains aspect ratio */
+}
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
