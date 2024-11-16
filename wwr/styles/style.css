@@ -225,6 +225,92 @@ box-sizing: border-box;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #7abfd1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 35px;
+    margin-right: 10px;
+}
+
+/* Hides the checkbox input */
+input[type="checkbox"] {
+    display: none;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 10px;
+    background-color: #144336;
+    color: white;
+    font-size: 16px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #dfe2e0;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Displays the answer when the checkbox is checked */
+input[type="checkbox"]:checked + label + .faq-answer {
+    display: block;
+}
+
+/* Changes the arrow direction when checked */
+input[type="checkbox"]:checked + label:after {
+    content: ' ▲';
+    font-size: 18px;
+}
+
+.faq-question:after {
+    content: ' ▼';
+    font-size: 18px;
+}
+
+.sidekick {
+    text-align: center;
+    height: 300px; /* Adjust height as needed */
+    position: relative; /* Needed for vertical alignment */
+}
+
+#sidekick-box img {
+    display: inline-block; /* Makes the image respect text alignment */
+    margin-top: auto; /* Adjust to center vertically if necessary */
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
