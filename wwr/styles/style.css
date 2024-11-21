@@ -309,8 +309,64 @@ input[type="checkbox"]:checked + label:after {
     height: auto;
 }
 
+form {
+    text-align: center;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
 
+form p{
+    margin-top: 1em;
+}
 
+form p:nth-child(3){
+    margin-right: 22px;
+}
+form label{
+    display: inline-block;
+    min-width: 90 px;
+    text-align: right;
+}
+
+form input, textarea{
+    font: 1em "Poppins", sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+form input:focus, textarea:focus{
+    outline-style: solid;
+    outline-color: #000;
+}
+
+form textarea{
+    vertical-align: top;
+    height: 5em;
+}
+
+form .button{
+    padding-left: 90px;
+}
+
+form button{
+    margin-left: o.5em;
+}
+
+#feedback{
+    background-color: antiquewhite;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+padding: .5em;
+display: none;
+}
+
+.moveDown {
+    margin-top: 3em;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
