@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="styles/style.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Development | Garrett Web Servides | Home</title>
@@ -13,15 +13,21 @@
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/personal_logo.jpg" alt="Garrett Web Services logo">
             </a>
-               <div id="hamburger_icon" class="hamburger">
-               ☰
-               </div>
-            <nav id="nav_menu" class="nav_menu hidden">
-                    <a href="index.html">Home</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="services.html">Services</a>
-                    <a href="site-plan.html">Site Plan</a>
-            </nav>
+            <nav>
+                <div class="ham-menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </nav>
+               <div class="off-screen-menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="services.html">Services</a></li>
+                </ul>
+              </div>
+              <script src="styles/java.js"></script>
             <h1>Garrett Web Services</h1>
         </header>
         <div id="hero">
