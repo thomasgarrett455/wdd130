@@ -247,7 +247,6 @@ body {
     margin-right: 10px;
 }
 
-/* Hides the checkbox input */
 input[type="checkbox"] {
     display: none;
 }
@@ -280,12 +279,12 @@ input[type="checkbox"] {
     margin-top: 5px;
 }
 
-/* Displays the answer when the checkbox is checked */
+
 input[type="checkbox"]:checked + label + .faq-answer {
     display: block;
 }
 
-/* Changes the arrow direction when checked */
+
 input[type="checkbox"]:checked + label:after {
     content: ' ▲';
     font-size: 18px;

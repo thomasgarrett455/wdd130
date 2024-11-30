@@ -10,69 +10,94 @@
 <body>
     <div id="content">
         <header>
+            <div class="right-area">
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/personal_logo.jpg" alt="Garrett Web Services logo">
             </a>
-            <nav>
-                <div class="ham-menu">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </nav>
+            </div>
+            <div class="left-area">
+                <nav>
+                    <div class="ham-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>            
                <div class="off-screen-menu">
+                <button class="close-menu">X</button>
                 <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="faq.html">FAQ</a></li>
                   <li><a href="services.html">Services</a></li>
                 </ul>
-              </div>
-              <script src="styles/java.js"></script>
+                </div>
+            </div>
+            <script>
+                const hamMenu = document.querySelector('.ham-menu');
+                const offScreenMenu = document.querySelector('.off-screen-menu');
+                const closeMenu = document.querySelector('.close-menu');
+                hamMenu.addEventListener('click', () => {
+                    offScreenMenu.classList.add('active'); // Show the menu
+                });
+                closeMenu.addEventListener('click', () => {
+                    offScreenMenu.classList.remove('active'); // Hide the menu
+                });
+            </script>
+            <div class="middle-area">    
             <h1>Garrett Web Services</h1>
+            </div>
         </header>
         <div id="hero">
             <section id="hero-msg">
-                <h2 class="home-title">Modern Web Solutions for Modern Brands</h2>
+                <h2 class="home-title">Modern Web Solutions for<br>Modern Brands</h2>
             </section>
         </div>
-        <main class="vst">
+        <h2>Our Values...</h2>
+        <main class="v">
             <section class="quality">
-                <img class="quality-img" src="images/tools.jpeg" alt="tools">
+                <img class="vs_img" src="images/tools.jpeg" alt="tools">
                 <h3>Quality</h3>
             </section>
             <section class="performance">
-                <img class="performance-img" src="images/performance.jpeg" alt="performance chart">
+                <img class="vs_img" src="images/performance.jpeg" alt="performance chart">
                 <h3>Performance</h3>
             </section>
             <section class="creativity">
-                <img class="creativity-img" src="images/creativity.jpeg" alt="colorful mural">
+                <img class="vs_img" src="images/creativity.jpeg" alt="colorful mural">
                 <h3>Creativity</h3>
             </section>
-            <h2>Services</h2>
+        </main>
+        <a id="services_link" href="services.html">
+            <h2>Services...</h2> 
+        </a>        
+        <div class="s">      
             <section class="website_development">
-                <img class="website_development-img" src="images/homepage1.jpg" alt="lines of programming">
+                <img class="vs_img" src="images/homepage1.jpg" alt="lines of programming">
                 <h3>Website Development</h3>
             </section>
             <section class="maintenance">
-                <img class="maintenance-img" src="images/homepage2.jpg" alt="website maintenance">
+                <img class="vs_img" src="images/homepage2.jpg" alt="website maintenance">
                 <h3>Website Maintenance</h3>
             </section>
             <section class="consulations">
-                <img class="consulations-img" src="images/consultations.jpeg" alt="consultation">
+                <img class="vs_img" src="images/consultations.jpeg" alt="consultation">
                 <h3>Free Consultations</h3>
+            </div>                
             </section>
+        <div class="t">    
             <section class="testimonail1">
-                <img class="testimonial1-img" src="images/testimonial1.jpeg" alt="woman giving testimonial">
+                <img class="t_img" src="images/testimonial1.jpeg" alt="woman giving testimonial">
                 <h3>Quality and service are a top priority at this company! -Karen F.</h3>
             </section>
             <section class="testimonial2">
-                <img class="testimonial2-img" src="images/testimonial2.jpeg" alt="man giving testimonial">
+                <img class="t_img" src="images/testimonial2.jpeg" alt="man giving testimonial">
                 <h3>The services are reasonably priced and given in a timely manner! -John P.</h3>
             </section>
-        </main>
+        </div>    
         <footer>
             <p>Garret Web Services &copy; 2024 - Thomas Garrett</p>
-            <p><a href="contactus.hml">Contact Us</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook1.png" alt="fb icon">

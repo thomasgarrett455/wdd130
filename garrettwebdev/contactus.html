@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Development | Garrett Web Servides | Home</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="right-area">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/personal_logo.jpg" alt="Garrett Web Services logo">
+            </a>
+            </div>
+            <div class="left-area">
+                <nav>
+                    <div class="ham-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>            
+               <div class="off-screen-menu">
+                <button class="close-menu">X</button>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="services.html">Services</a></li>
+                </ul>
+                </div>
+            </div>
+            <script>
+                const hamMenu = document.querySelector('.ham-menu');
+                const offScreenMenu = document.querySelector('.off-screen-menu');
+                const closeMenu = document.querySelector('.close-menu');
+                hamMenu.addEventListener('click', () => {
+                    offScreenMenu.classList.add('active'); // Show the menu
+                });
+                closeMenu.addEventListener('click', () => {
+                    offScreenMenu.classList.remove('active'); // Hide the menu
+                });
+            </script>
+            <div class="middle-area">    
+            <h1>Garrett Web Services</h1>
+            </div>
+        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div id="feedback"></div>
+<form action="/my-handling-form-page" method="post">
+    <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+    </p>
+    <p>
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="user_email"/>
+    </p>
+    <p>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+    </p>   
+    <p class="button">
+        <button type="submit">Send your message</button>
+    </p> 
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function(e) {
+        e.preventDefault();
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back to you as soon as possible!';
+        feedbackElement.style.display = "block";
+        document.body.classList.toggle('moveDown');
+        });    
+    </script>
+</form>
+<footer>
+    <p>Garret Web Services &copy; 2024 - Thomas Garrett</p>
+    <p><a href="contactus.hml">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook1.png" alt="fb icon">
+        </a>
+        <a href="https://x.com" target="_blank">
+            <img src="images/twitter1.png" alt="twitter.com">
+        </a>    
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram1.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
+</body>
