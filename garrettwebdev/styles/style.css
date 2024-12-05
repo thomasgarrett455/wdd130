@@ -9,6 +9,25 @@
    
 }
 
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 300px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0;
+    background-color: rgba(29, 53, 87, 0.8);
+    transition: opacity 1s ease;
+    pointer-events: none;
+}
+
+.overlay.show{
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s ease;
+}
+
 body{
     background-color: #1D3557
 }
