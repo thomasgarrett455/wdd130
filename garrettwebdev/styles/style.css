@@ -24,7 +24,6 @@
 
 .overlay.show{
     opacity: 1;
-    pointer-events: auto;
     transition: 1s ease;
 }
 
@@ -250,7 +249,6 @@ footer p a:hover{
 
 .hero_f-img{
     max-height: 300px;
-    max-width: auto;
 }
 
 .faq_title{
