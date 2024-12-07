@@ -123,6 +123,10 @@ header{
     margin-bottom: 25px; 
 }
 
+.off-screen-menu a:hover{
+    color: white;
+}
+
 a{
     text-decoration: none;
 }
@@ -196,6 +200,10 @@ p{
 .t_img{
     max-height: 500px;
     margin-left: 100px;
+}
+
+h4{
+    color: #4aac57;
 }
 
 footer{
