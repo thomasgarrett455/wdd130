@@ -343,15 +343,15 @@ input[type="checkbox"]:checked + label:after {
 
 .g1, .g2{
     display: grid;
-    grid-column: 1fr 1fr;
-    grid-row: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     max-width: 100%;
     margin-bottom: 45px;
 }
 
 .g1 img, .g2 img{
     max-height: 200px;
-    max-width: auto;
+    max-width: 100%;
 }
 
 .website_dev_s, .hosting_serv{
@@ -383,8 +383,8 @@ input[type="checkbox"]:checked + label:after {
 
 .why{
     display: grid;
-    grid-column: 20% 80%;
-    grid-row: 25px 250px;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 25px 250px;
 }
 
 .why h2{
