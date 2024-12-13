@@ -176,6 +176,7 @@ h3{
 p{
    color: #F1FAEE;
 }
+
 .home-title{
     font-size: 2em;
     text-align: center;
@@ -332,4 +333,68 @@ input[type="checkbox"]:checked + label:after {
 .question-img{
     height: 200px;
     width: auto;
+}
+
+.services-title{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 75px;
+}
+
+.g1, .g2{
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr;
+    max-width: 100%;
+    margin-bottom: 45px;
+}
+
+.g1 img, .g2 img{
+    max-height: 200px;
+    max-width: auto;
+}
+
+.website_dev_s, .hosting_serv{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.update_main, .consultations_s{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.g2{
+    margin-right: 25px;
+}
+
+.hosting_serv{
+    margin-right: 20px;
+}
+
+.why{
+    display: grid;
+    grid-column: 20% 80%;
+    grid-row: 25px 250px;
+}
+
+.why h2{
+    grid-column: 1/2;
+    grid-row: 1/2
+}
+
+.why p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: -15px;
+    font-size: 1.2em
 }
